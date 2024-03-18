@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.my-social {
+    justify-content: center;
+}
+
+.header {
+    background-color: #3498db;
+    background-image: url("/images/BG4.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: unset;
+    background-position: center;
+}
+
+.navbar {
+    z-index: 100;
+    background-color: transparent !important;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); */
+}
+
+ul.horizontal li {
+    padding: 0 10px;
+    float: left;
+}
+
+.logo {
+    padding: 0 15px;
+    cursor: pointer;
+    color: #d01010;
+}
+
+/* Content */
+
+.container-bg {
+    height: 250px;
+    z-index: 1;
+    position: relative;
+}
+
+.rounded-image {
+    z-index: 1;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.rounded-image img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+
+.welcome {
+    padding: 70px 0;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.welcome p {}
+
+.btn-floating {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    bottom: 40px;
+    right: 40px;
+    background-color: transparent;
+    color: #000000;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+i .btn-float {
+    vertical-align: middle;
+}
+
+li img {
+    width: 50px;
+}
+
+.list-skill {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-skill li {
+    padding: 10px;
+    overflow: hidden;
+}
+
+#text::after {
+    content: ".|";
+    animation: blinkCursor 1s infinite;
+}
+
+@keyframes blinkCursor {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* debug layout style */
+.debug-boder {
+    border: blue 2px solid;
+}
